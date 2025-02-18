@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D877E8E0-AC5A-4404-888D-942ABADB6591}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp8</RootNamespace>
+    <AssemblyName>WindowsFormsApp8</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.11.46.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>packages\HtmlAgilityPack.1.11.46\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Edit_Assassin_Ranged.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Assassin_Ranged.Designer.cs">
+      <DependentUpon>Edit_Assassin_Ranged.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Melee_Assassin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Melee_Assassin.Designer.cs">
+      <DependentUpon>Edit_Melee_Assassin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Tank_Melee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Edit_Tank_Melee.Designer.cs">
+      <DependentUpon>Edit_Tank_Melee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Tank_Melee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Tank_Melee.Designer.cs">
+      <DependentUpon>Form_Tank_Melee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IMAGEScs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IMAGEScs.Designer.cs">
+      <DependentUpon>IMAGEScs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Backend\Model\List.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Backend\Model\List.Designer.cs">
+      <DependentUpon>List.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Edit_Assassin_Ranged.resx">
+      <DependentUpon>Edit_Assassin_Ranged.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Melee_Assassin.resx">
+      <DependentUpon>Edit_Melee_Assassin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_Tank_Melee.resx">
+      <DependentUpon>Edit_Tank_Melee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Tank_Melee.resx">
+      <DependentUpon>Form_Tank_Melee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IMAGEScs.resx">
+      <DependentUpon>IMAGEScs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Backend\Model\Champions_manager.resx">
+      <DependentUpon>Champions_manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Backend\Model\List.resx">
+      <DependentUpon>List.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Form_Melee_Assassin.resx">
+      <DependentUpon>Form_Melee_Assassin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Backend\Model\Champions_manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Backend\Model\add_Assassin_Ranged.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Properties\Backend\Model\Assassins.cs" />
+    <Compile Include="Properties\Backend\Model\Champions.cs" />
+    <Compile Include="Properties\Backend\Model\FileUtiles.cs" />
+    <Compile Include="Properties\Backend\Model\Melee.cs" />
+    <Compile Include="Properties\Backend\Model\Melee_Tank.cs" />
+    <Compile Include="Properties\Backend\Model\Ranged.cs" />
+    <Compile Include="Properties\Backend\Model\Tanks.cs" />
+    <Compile Include="Properties\Form_Melee_Assassin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Form_Melee_Assassin.Designer.cs">
+      <DependentUpon>Form_Melee_Assassin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\Assassin Range1" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOL3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Range.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RANGE2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MelleTank2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MELEASSIAN2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map_BrawlballArena.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Map_BrawlballArena1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hanbok_Jaeyun.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1234.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
